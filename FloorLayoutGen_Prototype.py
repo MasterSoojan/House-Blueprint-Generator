@@ -137,7 +137,7 @@ class BlueprintApp(ttk.Window):
     """The main application window, inheriting from ttk.Window for theming."""
     def __init__(self):
         super().__init__(themename="darkly")
-        self.title("Modelum")
+        self.title("FloorLayoutGen")
         self.geometry("1400x900")
 
         self.house, self.furnishings = [], []
@@ -586,7 +586,7 @@ class BlueprintApp(ttk.Window):
         self.ax.tick_params(colors=palette['text'], which='both')
         for spine in self.ax.spines.values(): spine.set_edgecolor(palette['grid'])
         
-        self.ax.set_title("Modelum", color=palette['text'], weight='bold', fontsize=16)
+        self.ax.set_title("FloorLayoutGen", color=palette['text'], weight='bold', fontsize=16)
         self.ax.set_xlabel("Width (feet)", color=palette['text'])
         self.ax.set_ylabel("Height (feet)", color=palette['text'])
         
